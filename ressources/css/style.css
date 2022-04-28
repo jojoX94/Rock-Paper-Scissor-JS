@@ -47,6 +47,11 @@ body {
     background-size: contain;
     border: none;
     background-repeat: no-repeat;
+    transition: all 300ms ease-in-out;
+}
+
+.player > button:hover {
+    transform: scale(1.1);
 }
 .player > #rock {
     background-image: url("../images/rock.png");
