@@ -1,6 +1,7 @@
 const userChoices = document.querySelectorAll(".player > button");
 const result = document.querySelector(".result ");
 const computer = document.querySelector(".computer");
+const vs = document.querySelector(".vs")
 
 const computerChoice = () => {
   const list = ["rock", "paper", "scissor"];
@@ -11,8 +12,9 @@ userChoices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     const c = computerChoice();
     const u = e.target.id;
-    console.log(c, u);
-    computer.textContent = c;
+    vs.style.display = 'block'
+    computer.style.backgroundImage = `url(ressources/images/${c}.png)`
+    // computer.textContent = c;
     if (
       (c == "rock" && u == "scissor") ||
       (c == "paper" && u == "rock") ||
