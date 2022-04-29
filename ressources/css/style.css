@@ -61,9 +61,26 @@ body {
     background-image: url("../images/paper.png");
 }
 .player > #scissor {
-    background-image: url("../images/scissors.png");
+    background-image: url("../images/scissor.png");
     background-size: 94%;
 }
+
+.computer{
+    width: 103px;
+    height: 92px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vs{
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/versus.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
 .result{
     margin-top: 30px;
     padding: 5px 20px;
